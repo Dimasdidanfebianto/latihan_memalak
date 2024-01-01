@@ -1,0 +1,60 @@
+<odoo>
+  <data>
+    <!-- explicit list view definition -->
+<!--
+    <record model="ir.ui.view" id="latihan_memalak.list">
+      <field name="name">latihan_memalak list</field>
+      <field name="model">latihan_memalak.latihan_memalak</field>
+      <field name="arch" type="xml">
+        <tree>
+          <field name="name"/>
+          <field name="value"/>
+          <field name="value2"/>
+        </tree>
+      </field>
+    </record>
+-->
+
+    <!-- actions opening views on models -->
+<!--
+    <record model="ir.actions.act_window" id="latihan_memalak.action_window">
+      <field name="name">latihan_memalak window</field>
+      <field name="res_model">latihan_memalak.latihan_memalak</field>
+      <field name="view_mode">tree,form</field>
+    </record>
+-->
+
+    <!-- server action to the one above -->
+<!--
+    <record model="ir.actions.server" id="latihan_memalak.action_server">
+      <field name="name">latihan_memalak server</field>
+      <field name="model_id" ref="model_latihan_memalak_latihan_memalak"/>
+      <field name="state">code</field>
+      <field name="code">
+        action = {
+          "type": "ir.actions.act_window",
+          "view_mode": "tree,form",
+          "res_model": model._name,
+        }
+      </field>
+    </record>
+-->
+
+    <!-- Top menu item -->
+<!--
+    <menuitem name="latihan_memalak" id="latihan_memalak.menu_root"/>
+-->
+    <!-- menu categories -->
+<!--
+    <menuitem name="Menu 1" id="latihan_memalak.menu_1" parent="latihan_memalak.menu_root"/>
+    <menuitem name="Menu 2" id="latihan_memalak.menu_2" parent="latihan_memalak.menu_root"/>
+-->
+    <!-- actions -->
+<!--
+    <menuitem name="List" id="latihan_memalak.menu_1_list" parent="latihan_memalak.menu_1"
+              action="latihan_memalak.action_window"/>
+    <menuitem name="Server to list" id="latihan_memalak" parent="latihan_memalak.menu_2"
+              action="latihan_memalak.action_server"/>
+-->
+  </data>
+</odoo>
